@@ -50,6 +50,11 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
   <Flowchart DisplayName="RegexBuilder" sap:VirtualizedContainerService.HintSize="764,688.666666666667" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;TEST&quot;, &quot;TEST123&quot;,&quot;TEST1234&quot;,&quot;TEST56789&quot;}]" Name="text" />
@@ -75,14 +80,14 @@
           <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+      <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="512.666666666667,706.666666666667" sap2010:WorkflowViewState.IdRef="DoWhile_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <DoWhile.Condition>[count &lt; text.Length]</DoWhile.Condition>
-        <Sequence sap:VirtualizedContainerService.HintSize="486,532.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence sap:VirtualizedContainerService.HintSize="486,538.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="result" />
           </Sequence.Variables>
@@ -91,7 +96,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:IsMatch BuilderPattern="\d{4,9}" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="464,52.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_2" Input="[text(count)]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;4&quot;,&quot;QuantifierID&quot;:&quot;BXYT&quot;,&quot;QuantifierName&quot;:&quot;Between x and y times&quot;,&quot;QuantifierSecondValue&quot;:&quot;9&quot;}]" Pattern="\d{4,9}" RegexOption="IgnoreCase" Result="[result]">
+          <ui:IsMatch BuilderPattern="\d{4,9}" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="464,58.6666666666667" sap2010:WorkflowViewState.IdRef="IsMatch_2" Input="[text(count)]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;4&quot;,&quot;QuantifierID&quot;:&quot;BXYT&quot;,&quot;QuantifierName&quot;:&quot;Between x and y times&quot;,&quot;QuantifierSecondValue&quot;:&quot;9&quot;}]" Pattern="\d{4,9}" RegexOption="IgnoreCase" Result="[result]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
