@@ -1,7 +1,7 @@
 {
   "name": "DemoIntelligentOCR",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "InteligentOCR.xaml",
   "dependencies": {
     "Bluedart_Services": "1.0.3",
     "Druid.UiPath.Activities": "1.0.5",
